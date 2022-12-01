@@ -36,12 +36,18 @@ const chartAOS = new Chart(ctx4, {
             }
         },
         plugins: {
+            customCanvasBackgroundColor: {
+                color: 'lightGreen'
+            },
             legend: {
                 position: "top"
             },
             title: {
                 display: true,
-                text: 'Udvikling i kvadratmeterpris for hele landet'
+                text: 'Udvikling i kvadratmeterpris for hele landet',
+                font:{
+                    size: 24,
+                }
 
             }
         }

@@ -1,8 +1,18 @@
-#chart {
+*
+{
+    font-family: 'Merriweather', serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1{
     height: 500px;
-    width: 500px;
-    margin: 40px;
+        width: 500px;
+        margin: 40px;
     border: 1px solid black;
-    padding: 15px;
-    background-color: white;
 }
