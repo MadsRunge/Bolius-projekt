@@ -1,4 +1,3 @@
-
 const ctx4 = document.querySelector('#chart').getContext('2d');
 ctx4.canvas.width = 1
 ctx4.canvas.height = 1
@@ -36,9 +35,6 @@ const chartAOS = new Chart(ctx4, {
             }
         },
         plugins: {
-            customCanvasBackgroundColor: {
-                color: 'lightGreen'
-            },
             legend: {
                 position: "top"
             },
@@ -47,9 +43,11 @@ const chartAOS = new Chart(ctx4, {
                 text: 'Udvikling i kvadratmeterpris for hele landet',
                 font:{
                     size: 24,
+                    style: "italic",
                 }
 
             }
         }
     },
 });
+
