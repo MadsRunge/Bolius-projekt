@@ -66,5 +66,24 @@ body
 /* CSS TO FORM BOX
 
  */
+.select {
+    border: 1px solid #ccc;
+    width: 140px;
+    border-radius: 3px;
+    overflow: hidden;
 
+}
 
+.select select {
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+
+}
+.select-style select:focus {
+    outline: none;
+}
