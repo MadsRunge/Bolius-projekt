@@ -58,7 +58,7 @@ body
     display: flex;
     flex-direction: column;
 }
-#selectCommnue1 {
+#selectCommnune1 {
 
     height: 25%;
 }
@@ -86,4 +86,77 @@ body
 }
 .select-style select:focus {
     outline: none;
+}
+
+
+/* NAV BAR */
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.primary .navBar-nav {
+    width: 100%;
+}
+
+.navBar-expand-md .navBar-nav {
+    flex-direction: row;
+}
+
+.navBar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+
+.navBar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 60px;
+}
+
+/* Navbar links */
+#navbar a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+/* Style the navbar */
+
+
+.boliusPng {
+    width: 102.5px;
+    height: 47.59px;
+}
+
+.searchIconPic {
+    width: 24px;
+    height: 24px;
 }
