@@ -486,21 +486,25 @@ let popupKommune = []
 function onEachFeature(feature, layer) {
     layer.on({
         click: function(feature, a, b) {
+            const clickedKommune = feature.sourceTarget.feature.properties.label_dk;
+            if (isNaN(clickedKommune)){
+                    console.log(feature.sourceTarget.feature.properties.label_dk);
+                    popupKommune = clickedKommune
+                    layer.setStyle({
+                        fillColor: '#FF0000'
+                    });
 
-                const clickedKommune = feature.sourceTarget.feature.properties.label_dk;
-                console.log(feature.sourceTarget.feature.properties.label_dk);
-                popupKommune = clickedKommune
-                layer.setStyle({
-                    fillColor: '#FF0000'
-                });
-
-                for (let i = 0; i < communes.length; i++) {
-                    if (popupKommune === communes[i].Kommune) {
-                        popupKvmPris = communes[i]["2022K2"]
-                        console.log(popupKvmPris)
+                    for (let i = 0; i < communes.length; i++) {
+                        if (popupKommune === communes[i].Kommune) {
+                            popupKvmPris = communes[i]["2022K2"]
+                            console.log(popupKvmPris)
+                        }
                     }
 
                 }
+              if (feature.sourceTarget.feature.properties.label_dk === null) {
+                  console.log(alert)
+              }
         }
     });
 }
@@ -511,7 +515,6 @@ L.geoJson(kommuneData, {
         return {
             weight: 1,
             fillColor: getColor(feature.properties.label_en)
-
         };
     },
     onEachFeature: onEachFeature,
