@@ -54,3 +54,17 @@ body
 
 }
 
+.wrapperMap {
+    display: flex;
+    flex-direction: column;
+}
+#selectCommnue1 {
+
+    height: 25%;
+}
+
+/* CSS TO FORM BOX
+
+ */
+
+
