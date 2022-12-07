@@ -6,9 +6,8 @@ html, body {
     display: flex;
     height: 400px;
     width: 600px;
-    max-width: 80%;
-    max-height: 80%;
-
+    max-width: 100%;
+    max-height: 100%;
 }
 
 #map {
@@ -33,11 +32,12 @@ html, body {
 body
 {
     font-family: 'Merriweather', serif;
+
 }
 
 .container {
     height: 100%;
-
+    width: 100%;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -49,10 +49,28 @@ body
     border: 1px solid black;
     height: 500px;
     width: 500px;
-
+    margin: 40px;
+    padding: 15px;
     background-color: #DDEBEB;
 
 }
+#container2{
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#compareChart{
+    margin: 40px;
+    border: 1px solid black;
+    height: 500px;
+    width: 500px;
+    margin: 40px;
+    padding: 15px;
+    background-color: #DDEBEB;
+}
+
 
 .wrapperMap {
     display: flex;
