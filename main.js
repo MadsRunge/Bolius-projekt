@@ -1,6 +1,6 @@
 const ctx = document.querySelector('#chart').getContext('2d');
-ctx.canvas.width = 1
-ctx.canvas.height = 1
+ctx.canvas.width = 20
+ctx.canvas.height = 20
 const chartPrice = new Chart(ctx, {
     type: 'line',
     data: {
