@@ -41,8 +41,9 @@ body
     margin-right: 400px;
     margin-top: 50px;
 background-color: #FFFFFF;
-
-
+}
+.breadText{
+padding: 10px 80px 10px 80px;
 }
 .background{
 
