@@ -59,7 +59,7 @@ const chart = new Chart(ctx2, {
     data: {
         labels: [],
         datasets: [{
-            label: "Sammenligningsgraf",
+            label: 'Sammenligningsgraf',
             data: [10,10],
         }]
     }
