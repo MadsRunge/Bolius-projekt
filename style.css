@@ -35,6 +35,18 @@ body
 
 }
 
+.mainContainer{
+   margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 50px;
+background-color: #FFFFFF;
+
+
+}
+.background{
+
+    background-color: whitesmoke;
+}
 .container {
     height: 100%;
     width: 100%;
@@ -51,7 +63,7 @@ body
     width: 500px;
     margin: 40px;
     padding: 15px;
-    background-color: #DDEBEB;
+    background-color: white;
 
 }
 #container2{
@@ -68,7 +80,7 @@ body
     width: 500px;
     margin: 40px;
     padding: 15px;
-    background-color: #DDEBEB;
+    background-color: white;
 }
 
 
