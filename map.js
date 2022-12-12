@@ -481,8 +481,9 @@ function getColor(labelEnglish) {
 
 
 
-let popupKvmPris = []
-let popupKommune = []
+export let popupKvmPris = []
+export let popupKommune = []
+
 function onEachFeature(feature, layer) {
     layer.on({
         click: function(feature, a, b) {
@@ -529,5 +530,6 @@ function onMapClick(e) {
 }
 
 map.on('click', onMapClick);
+
 
 
