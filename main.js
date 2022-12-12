@@ -1,6 +1,9 @@
+import { popupKommune , popupKvmPris } from "./map.js";
+const selectMap = document.getElementById("map")
 const ctx = document.querySelector('#chart').getContext('2d');
 ctx.canvas.width = 20
 ctx.canvas.height = 20
+
 const chartPrice = new Chart(ctx, {
     type: 'line',
     data: {
@@ -51,6 +54,8 @@ const chartPrice = new Chart(ctx, {
     },
 });
 
+
+
 const ctx2 = document.querySelector('#compare').getContext('2d');
 ctx2.canvas.width = 1
 ctx2.canvas.height = 1
@@ -60,7 +65,17 @@ const chart = new Chart(ctx2, {
         labels: [],
         datasets: [{
             label: 'Sammenligningsgraf',
-            data: [10,10],
+            data: [],
         }]
     }
 });
+
+function update(){
+    if (popupKommune.length > 0 ) {
+        chart.data.datasets[0].data.push(popupKvmPris)
+        chart.data.labels.push(popupKommune)
+    }
+    chart.update();
+}
+
+selectMap.addEventListener("click", update)
