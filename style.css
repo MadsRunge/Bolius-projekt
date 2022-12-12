@@ -172,12 +172,14 @@ ul {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem -1em;
     overflow: hidden;
     background-color: #FFFFFF;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
     z-index: 999;
+
 }
+
 
 .sticky {
     position: fixed;
@@ -197,6 +199,7 @@ ul {
     text-align: center;
     padding: 14px;
     text-decoration: none;
+
 }
 /* Style the navbar */
 
@@ -204,11 +207,13 @@ ul {
 .boliusPng {
     width: 102.5px;
     height: 47.59px;
+    margin-left: 45px;
 }
 
 .searchIconPic {
     width: 24px;
     height: 24px;
+    margin-right: 45px;
 }
 
 .title {

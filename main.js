@@ -66,6 +66,7 @@ const chart = new Chart(ctx2, {
         datasets: [{
             label: 'Sammenligningsgraf',
             data: [],
+            backgroundColor: ['#EE5C47'],
         }]
     }
 });
