@@ -1,7 +1,6 @@
 html, body {
     height: 100%;
     margin: 0;
-    position: absolute;
     z-index: 10;
 }
 .leaflet-container {
@@ -41,17 +40,22 @@ body
 
 .mainContainer{
     display: block;
-   margin-left: 400px;
-    margin-right: 400px;
     margin-top: 50px;
-background-color: #FFFFFF;
+    width: 70%;
+    background-color: #FFFFFF;
+
 }
 .breadText{
 padding: 10px 80px 10px 80px;
 }
 .background{
 
+    align-content: center;
     background-color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
 }
 .container {
 
@@ -94,10 +98,7 @@ padding: 10px 80px 10px 80px;
     flex-direction: column;
     align-items: center;
 }
-#selectCommnune1 {
 
-    height: 25%;
-}
 
 /* CSS TO FORM BOX
 
