@@ -492,7 +492,7 @@ function onEachFeature(feature, layer) {
                     console.log(feature.sourceTarget.feature.properties.label_dk);
                     popupKommune = clickedKommune
                     layer.setStyle({
-                        fillColor: '#FF0000'
+                        fillColor: '#EE5C47'
                     });
 
                     for (let i = 0; i < communes.length; i++) {
