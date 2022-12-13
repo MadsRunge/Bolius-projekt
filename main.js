@@ -45,7 +45,7 @@ const chartPrice = new Chart(ctx, {
                 display: true,
                 text: 'Udvikling i kvadratmeterpris for hele landet',
                 font:{
-                    size: 24,
+                    size: 20,
                     style: "italic",
                 }
 
