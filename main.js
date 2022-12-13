@@ -64,11 +64,47 @@ const chart = new Chart(ctx2, {
     data: {
         labels: [],
         datasets: [{
-            label: 'Sammenligningsgraf',
+            label: 'Valgte kommuner',
             data: [],
             backgroundColor: ['#EE5C47'],
         }]
-    }
+    },
+    options: {
+        scales: {
+            x: {
+                title: {
+                    display: true,
+                    text: 'Kommuner'
+                },
+                grid: {
+                    display: false
+                }
+            },
+            y: {
+                title: {
+                    display: true,
+                    text: 'Pris pr. M2 - 2022'
+                },
+                grid: {
+                    display: false
+                }
+            }
+        },
+        plugins: {
+            legend: {
+                position: "top"
+            },
+            title: {
+                display: true,
+                text: 'Sammenligningsgraf',
+                font:{
+                    size: 20,
+                    style: "italic",
+                }
+
+            }
+        }
+    },
 });
 
 function update(){
