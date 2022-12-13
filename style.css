@@ -81,12 +81,13 @@ padding: 10px 80px 10px 80px;
 .howTo {
     width: 100%;
     height: 100%;
-    background-color: #ddebed;
+    background-color: #DDEBED;
     padding: 20px;
     margin: 10px;
 }
 .howToText{
     font-family: Arial;
+    background-color: #DDEBED;
     color: black;
     font-size: 14px;
 }
