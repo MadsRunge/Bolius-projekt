@@ -293,6 +293,7 @@ ul {
 
 #bodyText1{
     line-height: 27px;
+    font-size: 20px;
 }
 #bodyText2{
     line-height: 27px;
@@ -306,4 +307,10 @@ ul {
 
 h1{
     line-height: 40px;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.underOvertext{
+    font-family: Arial;
 }
