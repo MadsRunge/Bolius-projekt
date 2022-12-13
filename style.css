@@ -280,3 +280,9 @@ ul {
     list-style: none;
 }
 
+.housesPicture {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
