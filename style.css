@@ -2,6 +2,7 @@ html, body {
     height: 100%;
     margin: 0;
     z-index: 10;
+
 }
 .leaflet-container {
     display: flex;
@@ -13,6 +14,7 @@ html, body {
 
 .text {
     font-family: Merriweather;
+
 }
 
 
@@ -53,6 +55,7 @@ body
 }
 .breadText{
 padding: 10px 80px 10px 80px;
+    line-height: 25px;
 }
 @media only screen and (max-width: 600px) {
     .mainContainer {
@@ -61,6 +64,7 @@ padding: 10px 80px 10px 80px;
     }
     .text{
         font-size: 1em;
+
     }
     .breadText{
         margin-top: 30px;
@@ -285,4 +289,21 @@ ul {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+}
+
+#bodyText1{
+    line-height: 27px;
+}
+#bodyText2{
+    line-height: 27px;
+}
+#bodyText3{
+    line-height: 27px;
+}
+#bodyText4{
+    line-height: 27px;
+}
+
+h1{
+    line-height: 40px;
 }
